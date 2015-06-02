@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Note x="511" y="13">application</Note>
+    <Note x="662" y="52">view</Note>
+    <Note x="727" y="181">domain</Note>
+    <Note x="619" y="290">persistent</Note>
+    <Package name="com.anyho.coolreader.view" x="35" y="93">
+        <DependencyLink destination="com.anyho.coolreader.text"/>
+        <DependencyLink destination="com.anyho.coolreader.util"/>
+        <DependencyLink destination="com.anyho.coolreader.atys"/>
+        <DependencyLink destination="com.anyho.coolreader"/>
+    </Package>
+    <Package name="com.anyho.coolreader.util" x="17" y="241">
+        <DependencyLink destination="com.anyho.coolreader"/>
+    </Package>
+    <Package name="com.anyho.coolreader.tree" x="562" y="236"/>
+    <Package name="com.anyho.coolreader.text" x="256" y="239">
+        <DependencyLink destination="com.anyho.coolreader.entity"/>
+        <DependencyLink destination="com.anyho.coolreader.view"/>
+        <DependencyLink destination="com.anyho.coolreader.util"/>
+        <DependencyLink destination="com.anyho.coolreader.db"/>
+        <DependencyLink destination="com.anyho.coolreader.atys"/>
+        <DependencyLink destination="com.anyho.coolreader"/>
+    </Package>
+    <Package name="com.anyho.coolreader.db" x="166" y="305">
+        <DependencyLink destination="com.anyho.coolreader.entity"/>
+    </Package>
+    <Package name="com.anyho.coolreader.entity" x="385" y="304"/>
+    <Package name="com.anyho.coolreader.adapter" x="615" y="95">
+        <DependencyLink destination="com.anyho.coolreader.tree"/>
+        <DependencyLink destination="com.anyho.coolreader"/>
+    </Package>
+    <Package name="com.anyho.coolreader.atys" x="366" y="94">
+        <DependencyLink destination="com.anyho.coolreader.text"/>
+        <DependencyLink destination="com.anyho.coolreader.tree"/>
+        <DependencyLink destination="com.anyho.coolreader.adapter"/>
+        <DependencyLink destination="com.anyho.coolreader.entity"/>
+        <DependencyLink destination="com.anyho.coolreader.view"/>
+        <DependencyLink destination="com.anyho.coolreader.util"/>
+        <DependencyLink destination="com.anyho.coolreader"/>
+    </Package>
+    <Package name="com.anyho.coolreader" x="270" y="19">
+        <DependencyLink destination="com.anyho.coolreader.text"/>
+        <DependencyLink destination="com.anyho.coolreader.entity"/>
+        <DependencyLink destination="com.anyho.coolreader.view"/>
+        <DependencyLink destination="com.anyho.coolreader.atys"/>
+    </Package>
+</PackageAnalysis>

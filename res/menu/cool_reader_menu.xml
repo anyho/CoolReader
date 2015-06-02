@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_directory"
+        android:icon="@drawable/ic_menu_library"
+        android:title="@string/book_shelf">
+    </item>
+    <item
+        android:id="@+id/menu_day"
+        android:icon="@drawable/ic_menu_day"
+        android:title="@string/day">
+    </item>
+    <item
+        android:id="@+id/menu_night"
+        android:icon="@drawable/ic_menu_night"
+        android:title="@string/night">
+    </item>
+    <item
+        android:id="@+id/menu_navigation"
+        android:title="@string/navigation">
+    </item>
+    <item
+        android:id="@+id/menu_zoom_in"
+        android:title="@string/font_zoom_in">
+    </item>
+    <item
+        android:id="@+id/menu_zoom_out"
+        android:title="@string/font_zoom_out">
+    </item>
+    <item
+        android:id="@+id/menu_setting"
+        android:title="@string/setting">
+    </item>
+
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/decoration" >
+        <PreferenceScreen android:title="@string/appearence" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="@string/pref_autoorientation"
+                android:summaryOff="@string/auto_orientation_summary_off"
+                android:summaryOn="@string/auto_orientation_summary_on"
+                android:title="@string/auto_orientation" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_active_menu_with_status"
+                android:summaryOff="@string/active_menu_with_status_summary_off"
+                android:summaryOn="@string/active_menu_with_status_summary_on"
+                android:title="@string/active_menu_with_status" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/word" >
+            <ListPreference
+                android:defaultValue="20"
+                android:entries="@array/font_size_entry_or_value"
+                android:entryValues="@array/font_size_entry_or_value"
+                android:key="@string/pref_font_size"
+                android:title="@string/font_size" />
+            <ListPreference
+                android:defaultValue="0"
+                android:entries="@array/font_family_entry"
+                android:entryValues="@array/font_family_value"
+                android:key="@string/pref_font_family"
+                android:title="@string/font_family" />
+            <ListPreference
+                android:defaultValue="10"
+                android:entries="@array/line_space_entry"
+                android:entryValues="@array/line_space_value"
+                android:key="@string/pref_line_space"
+                android:title="@string/line_space" />
+        </PreferenceScreen>
+        <!-- 边距 -->
+        <PreferenceScreen android:title="@string/margin" >
+            <ListPreference
+                android:defaultValue="10"
+                android:entries="@array/margin_entry_value"
+                android:entryValues="@array/margin_entry_value"
+                android:key="@string/pref_left_margin"
+                android:title="@string/left_margin" />
+            <ListPreference
+                android:defaultValue="10"
+                android:entries="@array/margin_entry_value"
+                android:entryValues="@array/margin_entry_value"
+                android:key="@string/pref_top_margin"
+                android:title="@string/top_margin" />
+            <ListPreference
+                android:defaultValue="10"
+                android:entries="@array/margin_entry_value"
+                android:entryValues="@array/margin_entry_value"
+                android:key="@string/pref_right_margin"
+                android:title="@string/right_margin" />
+            <ListPreference
+                android:defaultValue="10"
+                android:entries="@array/margin_entry_value"
+                android:entryValues="@array/margin_entry_value"
+                android:key="@string/pref_bottom_margin"
+                android:title="@string/bottom_margin" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_show_time"
+            android:summaryOff="@string/dont_show_time_at_footer"
+            android:summaryOn="@string/show_time_at_footer"
+            android:title="@string/show_time" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_show_battery_percent"
+            android:summaryOff="@string/dont_show_battery_percent_at_footer"
+            android:summaryOn="@string/show_battery_percent_at_footer"
+            android:title="@string/show_battery_percent" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_show_page_number"
+            android:summaryOff="@string/dont_show_page_number_at_footer"
+            android:summaryOn="@string/show_page_number_at_footer"
+            android:title="@string/show_page_number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/scrolling" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_scrolling_with_volumn_key"
+            android:summaryOff="@string/dont_scrolling_with_volumn_key"
+            android:summaryOn="@string/scrolling_with_volumn_key"
+            android:title="@string/volumn_key_scrolling" />
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/animation_entry"
+            android:entryValues="@array/animation_value"
+            android:key="@string/pref_animaton"
+            android:title="@string/animation_to_scrolling" />
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/animation_speed_entry_or_value"
+            android:entryValues="@array/animation_speed_entry_or_value"
+            android:key="@string/pref_animaton_speed"
+            android:title="@string/animation_speed" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

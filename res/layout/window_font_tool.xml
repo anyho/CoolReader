@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/zoom_plate"
+    android:orientation="horizontal"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:weightSum="1" >
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="@string/zoom_in" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="@string/zoom_out" />
+
+</LinearLayout>

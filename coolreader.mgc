@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.anyho.coolreader.text.TextModel" x="601" y="8">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.anyho.coolreader.text.TextPage"
+            endpointName="nextPage" kind="Simple">
+            <Point x="527" y="188"/>
+        </Association>
+        <Association
+            destinationClassName="com.anyho.coolreader.text.TextPage"
+            endpointName="currentPage" kind="Simple">
+            <Point x="523" y="37"/>
+            <Point x="484" y="25"/>
+        </Association>
+        <Association
+            destinationClassName="com.anyho.coolreader.text.TextPage"
+            endpointName="previousPage" kind="Simple">
+            <Point x="535" y="100"/>
+        </Association>
+        <Association
+            destinationClassName="com.anyho.coolreader.entity.Book"
+            endpointName="currentBook" kind="Simple"/>
+        <Communication destinationClassName="com.anyho.coolreader.entity.Book"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.BookModel"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.CachedCharBlock"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.TextPage"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.Library" x="20" y="0">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.anyho.coolreader.text.Library.OnLibraryChangedCallback"
+            endpointName="onLibraryChangedCallback" kind="Simple"/>
+        <Communication destinationClassName="com.anyho.coolreader.entity.Book"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.Library.OnLibraryChangedCallback"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.TextModel.PageIndex" x="322" y="442">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.entity.Book" x="281" y="214">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.TextModel.ActionCode" x="429" y="433">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.TextModel.Direction" x="57" y="430">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.BookModel" x="107" y="194">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.anyho.coolreader.text.CachedCharBlock"
+            endpointName="CharCached" kind="Simple"/>
+        <Communication destinationClassName="com.anyho.coolreader.entity.Book"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.CachedCharBlock"/>
+    </Class>
+    <Class
+        name="com.anyho.coolreader.text.Library.OnLibraryChangedCallback"
+        x="33" y="126">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.CachedCharBlock" x="10" y="270">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.TextModel.Animation" x="214" y="451">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.anyho.coolreader.text.TextPage" x="282" y="48">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.anyho.coolreader.text.CachedCharBlock"/>
+    </Class>
+</ClassDiagram>
